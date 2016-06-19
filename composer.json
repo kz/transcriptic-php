@@ -1,0 +1,47 @@
+{
+  "name": "kz/transcriptic-php",
+  "description": "transcriptic-php is a PHP package for the Transcriptic API.",
+  "keywords": [
+    "transcriptic-php",
+    "transcriptic",
+    "labs"
+  ],
+  "homepage": "https://github.com/kz/transcriptic-php",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kelvin Zhang",
+      "email": "me@iamkelv.in",
+      "homepage": "http://iamkelv.in/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "guzzlehttp/guzzle": "~6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kz\\Transcriptic\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kz\\Transcriptic\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "suggest": {
+    "illuminate/support": "Required to use with Laravel (v5.1.*)"
+  }
+}
